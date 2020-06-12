@@ -3,6 +3,7 @@ import math
 
 # June 9
 # Find the median of two sorted arrays.
+# Problem source: https://www.byte-by-byte.com/median/
 
 def median(arr1, arr2):
     arr1.extend(arr2)
@@ -17,8 +18,8 @@ def median(arr1, arr2):
         median = arr1[int(math.floor(arrLength/2))]
     return median
 
-def testMedian():
-    arrA = [1, 3, 5]
-    arrB = [2, 4, 6]
-    print (median(arrA, arrB))
+
+arrA = [1, 3, 5]
+arrB = [2, 4, 6]
+print (median(arrA, arrB))
 
